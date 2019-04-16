@@ -11,7 +11,6 @@ class Config(object):
 	SECRET_KEY = "WIll figure out later"
 
 
-
 class ProductionConfig(Config):
 	DEBUG = False
 
