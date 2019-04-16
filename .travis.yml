@@ -1,11 +1,6 @@
 language: python
-dist: xenial
 python:
   - "3.4"
-env:
-  - FLASK=1.0.2
-  - FLASK=0.10.1
+cache: pip3
 install:
-  - pip install -q Flask=$FLASK
   - pip install -r requirements.txt
-  - pip install -q -e .
