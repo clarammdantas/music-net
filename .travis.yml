@@ -1,0 +1,21 @@
+language: python
+dist: xenial
+python:
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.7-dev"
+  - "3.8-dev"
+env:
+  - FLASK=1.0.2
+  - FLASK=0.10.1
+install:
+  - pip install -q Flask=$FLASK
+  - pip install -r requirements.txt
+  - pip install -q -e .
+script:
+  - pytest
+addons:
+  postgresql: "9.3"
