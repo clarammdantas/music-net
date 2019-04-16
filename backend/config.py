@@ -8,7 +8,7 @@ class Config(object):
 	SQLALCHEMY_ECHO = False
 	SQLALCHEMY_TRACK_MODIFICATIONS = True
 	SQLALCHEMY_DATABASE_URI = "postgresql://postgres:postgres456@localhost/music_net"
-	SECRET_KEY = "WIll figure out later"
+	SECRET_KEY = "WIll figure out later "
 
 
 class ProductionConfig(Config):
